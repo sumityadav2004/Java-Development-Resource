@@ -7,18 +7,10 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
- <bean class="com.springcore.student" name="student1">
-     <property name ="studentId">
-     <value>465</value>
-     </property>
+ <bean class="com.springcore.student" name="student1" p:studentId="0007" p:studentName="Danish Jain" p:StudentAddress="ballabhghar"/>
+          
+
+ <bean class="com.springcore.student" name="student2" p:studentId="0027" p:studentName="Sumit Yadav" p:StudentAddress="Ballabhghar"/>
      
-     <property name="studentName">
-     <value>sumit yadav</value>
-     </property>
-     
-     <property name="studentAddress">
-     <value>ballabhghar</value>
-     </property>
-     
- </bean>
+
 </beans>
