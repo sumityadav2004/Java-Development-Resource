@@ -18,5 +18,11 @@
 						
 						
 						</bean>
+						<bean class="com.springcore.ci.Addition" name="addition">
+						<constructor-arg type="int" value="56" index="1" />
+						<constructor-arg type="int" value="45" index="0" />
+						
+						</bean>
 						
 	 </beans>
+ 

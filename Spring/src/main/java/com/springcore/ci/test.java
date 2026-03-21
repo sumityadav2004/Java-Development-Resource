@@ -10,6 +10,8 @@ public class test {
         person p=(person)context.getBean("person");
         System.out.println(p);
         
+        Addition addition=(Addition)context.getBean("addition");
+        addition.dosum();
 	}
 
 }
