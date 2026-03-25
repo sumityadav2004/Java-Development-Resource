@@ -9,5 +9,15 @@
 	init-method="init" destroy-method="destroy" >
 	<property name="price" value="12" />
 	</bean>
-
+   
+   <bean class="com.springcore.lifecycle.second" name="s1">
+  <property name="price" value="121" />  
+  
+   </bean>
+   
+   <bean class="com.springcore.lifecycle.third" name="three">
+   <property name="course" value="btech" />
+   
+    </bean>
+   
 </beans>
