@@ -14,7 +14,8 @@
   <property name="price" value="121" />  
   
    </bean>
-   
+   <bean class ="com.springcore.lifecycle.second" name="s2"></bean>
+   <property name="price" value = "19"> </property>
    <bean class="com.springcore.lifecycle.third" name="three">
    <property name="course" value="btech" />
    
