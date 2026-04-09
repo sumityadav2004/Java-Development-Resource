@@ -19,22 +19,13 @@
 						
 						</util:list>	
 						
+         <bean class="com.springcore.standalong.collection.person" name="person1">
+      
       
         <!--   <property name="brothers">  <ref bean="brothers" /> 
           </property> -->
       
-      
-        
-        <util:map map-class="java.util.HashMap" id="collegfee">
-        <entry key="java" value="4000" />
-        <entry key="python" value="5000"/>
-        
-        </util:map>
-        <bean class="com.springcore.standalong.collection.person" name="person1">
-      
-        <property name="peaple" ref="brotherhood" />  
-        <property name="feestructure" ref="collegfee"></property>
-        
+        <property name="peaple" ref="brotherhood" />   
          </bean>
 
 

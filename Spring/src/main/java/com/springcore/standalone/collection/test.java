@@ -6,6 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class test {
 public static void main(String args []) {
 	
-	ApplicationContext con= new ClassPathXmlApplicationContext("");
+	ApplicationContext con= new ClassPathXmlApplicationContext("com/springcore/standalone/collection/configure.xml");
+	person per=con.getBean("brothers" , person.class);
+	System.out.println(per);
+	
 }
 }
