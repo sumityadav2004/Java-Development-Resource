@@ -16,9 +16,12 @@
 						<value>Amit</value>
 						<value>Lokesh</value>
 						<value>Danish</value> 
+					
 						
 						</util:list>	
 						
+						 
+      
       
         <!--   <property name="brothers">  <ref bean="brothers" /> 
           </property> -->
@@ -31,10 +34,19 @@
         
         </util:map>
         <bean class="com.springcore.standalong.collection.person" name="person1">
-      
-        <property name="peaple" ref="brotherhood" />  
-        <property name="feestructure" ref="collegfee"></property>
         
+      
+      <!-- standalong properties -->
+      <util:properties id="mysql">
+      <prop key="driver">com.sql.jdbs.Driver</prop>      
+      <prop key="username"> Sumit12 </prop>
+      <prop key="passward"> sumit@234 </prop>
+      
+      </util:properties>
+       
+        <property name="peaple" ref="brotherhood" />  
+        <property name="feestructure" ref="collegfee"/>
+        <property name="properties" ref="mysql"/>
          </bean>
 
 
