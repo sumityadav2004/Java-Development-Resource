@@ -10,9 +10,20 @@ public class Test {
 
 		ApplicationContext con=new ClassPathXmlApplicationContext("com/spring/stereotype/Stereoconfigure.xml"); 
 		Student student=con.getBean("obj",Student.class);
-		System.out.println(student);
-		System.out.println(student.getName());
-		System.out.println(student.getName().getClass().getName());
+		//System.out.println(student);
+		//System.out.println(student.getName());
+		//System.out.println(student.getName().getClass().getName());
+		System.out.println(student.hashCode());
+		
+		Student student2=con.getBean("obj",Student.class);
+		System.out.println(student2.hashCode());
+		
+		
+	       teacher t1=con.getBean("teac",teacher.class);
+	       System.out.println(t1.hashCode());
+	       teacher t2=con.getBean("teac",teacher.class);
+	       System.out.println(t2.hashCode());
+		
 	}
 
 }

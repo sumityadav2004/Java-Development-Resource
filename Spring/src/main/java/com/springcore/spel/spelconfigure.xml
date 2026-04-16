@@ -8,13 +8,7 @@
 						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 						http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 	
-	<context:component-scan base-package="com.spring.stereotype;"/>
+	<context:component-scan base-package="com.springcore.spel"/>
 	
-	<util:list list-class="java.util.ArrayList" id="temp">
-	<value>lokesh</value>
-	<value>danish</value>
-	<value>sumit</value>
-	</util:list>
 	
-	<bean class ="com.spring.stereotype.teacher" name="teac" scope="prototype"/>
 	</beans>
